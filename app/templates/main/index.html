@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Forbes Richest Atheletes EDA</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/favicon.png" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.7.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-zoom-in"></i> <span>About 데이터</span></a></li>
+        <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-chat"></i> <span>Describe</span></a></li>
+        <li><a href="#zoom" class="nav-link scrollto"><i class="bx bx-bullseye"></i> <span>데이터 좀 더 자세히 살펴보기</span></a></li>
+        <li><a href="#visualize" class="nav-link scrollto"><i class="bx bx-folder-plus"></i> <span>시각화</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Forbes Richest Atheletes</h1>
+      <p>Made by : <span class="typed" data-typed-items="HAI_syz, [4기-A] 조우성"></span></p>
+      <div class="social-links">
+        <a href="https://github.com/HAI-syz" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.kaggle.com/datasets/parulpandey/forbes-highest-paid-athletes-19902019" class="database"><i class="bx bx-box"></i></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        
+        <div class="section-title">
+          <h2> About 데이터 </h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h5>rows : 301 , cols : 8</h5>
+            <div class="row">
+              <table border="1" class="dataframe table table-striped">
+                <thead>
+                  <tr style="text-align: middle;">
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Naionality</th>
+                    <th>Current Rank</th>
+                    <th>Previous Year Rank</th>
+                    <th>Sport</th>
+                    <th>Year</th>
+                    <th>Earnings</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mike Tyson</td>
+                    <td>USA</td>
+                    <td>1</td>
+                    <td>NaN</td>
+                    <td>boxing</td>
+                    <td>28.6</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Buster Douglas</td>
+                    <td>USA</td>
+                    <td>2</td>
+                    <td>NaN</td>
+                    <td>boxing</td>
+                    <td>1990</td>
+                    <td>26.0</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Sugar Ray Leonard</td>
+                    <td>USA</td>
+                    <td>3</td>
+                    <td>NaN</td>
+                    <td>boxing</td>
+                    <td>1990</td>
+                    <td>13.0</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Ayrton Senna</td>
+                    <td>Brazil</td>
+                    <td>4</td>
+                    <td>NaN</td>
+                    <td>auto racing</td>
+                    <td>1990</td>
+                    <td>10.0</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Alain Prost</td>
+                    <td>France</td>
+                    <td>5</td>
+                    <td>NaN</td>
+                    <td>auto racing</td>
+                    <td>1990</td>
+                    <td>9.0</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="col" style="float: none; margin:0 auto;">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>S.No:</strong> <span>사람과 년도에 대한 index</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>운동선수 이름</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span>운동선수 출신 국가</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Current Ranking:</strong> <span>해당 년도의 등수</span></li>
+                </ul>
+              </div>
+              <div class="col" style="float: none; margin:0 auto;">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Previous Year Rank:</strong> <span>전년도의 등수</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Sport:</strong> <span>운동 종류</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Year:</strong> <span>기준 년도</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Earnings:</strong> <span>수익($ million)</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Describe</h2>
+          <p>데이터의 통계를 살펴봅시다.</p>
+        </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <table border="1" class="dataframe table table-striped">
+              <thead>
+                <tr style="text-align: middle;">
+                  <th></th>
+                  <th>Earnings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>mean</th>
+                  <td>45.516279</td>
+                </tr>
+                <tr>
+                  <th>std</th>
+                  <td>33.525337</td>
+                </tr>
+                <tr>
+                  <th>min</th>
+                  <td>8.1</td>
+                </tr>
+                <tr>
+                  <th>25%</th>
+                  <td>24.0</td>
+                </tr>
+                <tr>
+                  <th>50%</th>
+                  <td>39.0</td>
+                </tr>
+                <tr>
+                  <th>75%</th>
+                  <td>45.516279</td>
+                </tr>
+                <tr>
+                  <th>max</th>
+                  <td>300</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col" style="float: none; margin:0 auto;">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>82명</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span>22개국</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Sport:</strong> <span>29개 경기</span></li>
+            </ul>
+          </div>
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= NaN Section ======= -->
+    <section id="nan" class="nan section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>데이터 결측치</h2>
+          <p>데이터 결측치는 존재하지 않습니다. Previous Year Rank의 결측치는 측정할 수 없는 값입니다.</p>
+          <table border="1" class="dataframe table table-striped">
+            <thead>
+              <tr style="text-align: right;">
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>S.NO</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Name</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Nationality</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Current Rank</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Prevous Year Rank</th>
+                <td>24</td>
+              </tr>
+              <tr>
+                <th>Sport</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Year</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Earnings</th>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section><!-- End NaN Section -->
+
+    <!-- ======= Zoom Section ======= -->
+    <section id="zoom" class="zoom">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>데이터 좀 더 자세히 살펴보기</h2>
+          <p>String data를 좀 더 살펴봅시다.</p>
+          <div class="col" style="float: none; margin:0 auto;">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <p>Aaron Rodgers, <span style="font-weight:bold">Aaron Rogers</span><sup>1</sup>, Alain Prost, Alex Rodriguez, Andre Agassi, Andrew Luck, Arnold Palmer, Ayrton Senna, Buster Douglas, Cam Newton, Canelo Alvarez, Carson Wentz, Cecil Fielder, Conor McGregor, Cristiano Ronaldo, Dale Earnhardt, Dale Earnhardt Jr., David Beckham, Deion Sanders, Dennis Rodman, <span style="font-weight:bold">Donovan "Razor" Ruddock</span><sup>2</sup>, Drew Brees, Eli Manning, Emmit Smith, Evander Holyfield, Floyd Mayweather, Gary Sheffield, George Foreman, Gerhard Berger, Grant Hill, Greg Norman, Jack Nicklaus, Jacques Villeneuve, James Harden, Jeff Gordon, Jim Courier, Joe Montana, Joe Sakic, Jordan Spieth, Kevin Durant, Kevin Garnett, Kimi Raikkonen, Kirk Cousins, Kobe Bryant, Lance Armstrong, LeBron James, Lennox Lewis, Lewis Hamilton, Lionel Messi, Manny Pacquiao, Matt Ryan, Matthew Stafford, Michael Jordan, Michael Moorer, Michael Schumacher, Michael Vick, Mike Tyson, Monica Seles, Muhammad Ali, Neymar, Nigel Mansell, Novak Djokovic, Oscar De La Hoya, Patrick Ewing, Peyton Manning, Phil Mickelson, Rafael Nadal, Riddick Bowe, Roger Federer, Ronaldinho, Rory McIlroy, Russell Wilson, Sergei Federov, <span style="font-weight:bold">Shaq O'Neal, Shaquille O'Neal</span><sup>3</sup>, Stephen Curry, Sugar Ray Leonard, Terrell Suggs, Tiger Woods, Tom Brady, Valentino Rossi, Wayne Gretzky</p></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <p>Argentina, Australia, Austria, Brazil, Canada, Dominican, <span style="font-weight:bold">Filipino</span><sup>4</sup>, Finland, France, Germany, Ireland, Italy, Mexico, Northern Ireland, Philippines, Portugal, Russia, Serbia, Spain, Switzerland, UK, USA</p></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Sport:</strong> <p>American Football, American Football / Baseball, Auto Racing, <span style="font-weight:bold">Auto Racing (Nascar)</span><sup>5</sup>, Auto racing, Baseball, Basketball, Boxing, F1 Motorsports, F1 racing, Golf, Hockey, Ice Hockey, MMA, NASCAR, NBA, NFL, Soccer, Tennis, auto racing, baseball, basketball, boxing, cycling, golf, ice hockey, <span style="font-weight:bold">motorcycle gp</span><sup>6</sup>, soccer, tennis</p></li>
+            </ul>
+          </div>
+          <ul>
+            <ol>Aaron Rogers: 오타입니다. Aaron Rodgers로 정정합니다.</ol>
+            <ol>Donovan "Razor" Ruddock: 불필요한 ""를 생략합니다.</ol>
+            <ol>Shaq O'Neal: Shaquille O'Neal를 줄여 썼습니다. 원래대로 돌립니다.</ol>
+            <ol>Filipino: Philippines와 같습니다.</ol>
+            <ol>Auto Racing (Nascar): NASCAR가 이미 있기 떄문에 NASCAR로 통일합니다.</ol>
+            <ol>motorcycle gp: WGP로 줄여씁니다.</ol>
+          </ul>
+          <strong>변경 후</strong>
+          <div class="col" style="float: none; margin:0 auto;">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Name (82 -> 80):</strong> <p>Aaron Rodgers, Alain Prost, Alex Rodriguez, Andre Agassi, Andrew Luck, Arnold Palmer, Ayrton Senna, Buster Douglas, Cam Newton, Canelo Alvarez, Carson Wentz, Cecil Fielder, Conor McGregor, Cristiano Ronaldo, Dale Earnhardt, Dale Earnhardt Jr., David Beckham, Deion Sanders, Dennis Rodman, Donovan Razor Ruddock, Drew Brees, Eli Manning, Emmit Smith, Evander Holyfield, Floyd Mayweather, Gary Sheffield, George Foreman, Gerhard Berger, Grant Hill, Greg Norman, Jack Nicklaus, Jacques Villeneuve, James Harden, Jeff Gordon, Jim Courier, Joe Montana, Joe Sakic, Jordan Spieth, Kevin Durant, Kevin Garnett, Kimi Raikkonen, Kirk Cousins, Kobe Bryant, Lance Armstrong, LeBron James, Lennox Lewis, Lewis Hamilton, Lionel Messi, Manny Pacquiao, Matt Ryan, Matthew Stafford, Michael Jordan, Michael Moorer, Michael Schumacher, Michael Vick, Mike Tyson, Monica Seles, Muhammad Ali, Neymar, Nigel Mansell, Novak Djokovic, Oscar De La Hoya, Patrick Ewing, Peyton Manning, Phil Mickelson, Rafael Nadal, Riddick Bowe, Roger Federer, Ronaldinho, Rory McIlroy, Russell Wilson, Sergei Federov, Shaquille O'Neal, Stephen Curry, Sugar Ray Leonard, Terrell Suggs, Tiger Woods, Tom Brady, Valentino Rossi, Wayne Gretzky</p></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Nationality (22 -> 21):</strong> <p>Argentina, Australia, Austria, Brazil, Canada, Dominican, Finland, France, Germany, Ireland, Italy, Mexico, Northern Ireland, Philippines, Portugal, Russia, Serbia, Spain, Switzerland, UK, USA</p></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Sport (29 -> 19):</strong> <p>AMERICAN_FOOTBALL, AMERICAN_FOOTBALL/BASEBALL, AUTO_RACING, BASEBALL, BASKETBALL, BOXING, CYCLING, F1_MOTORSPORTS, F1_RACING, GOLF, HOCKEY, ICE_HOCKEY, MMA, NASCAR, NBA, NFL, SOCCER, TENNIS, WGP</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Zoom Section -->
+
+    <!-- ======= Annual Section ======= -->
+    <section id="annual" class="annual">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>년도 별 1등</h2>
+          <p>년도 별로 가장 많은 수익을 번 운동선수</p>
+          <table border="1" class="dataframe table table-striped">
+            <thead>
+              <tr>
+                <th>year</th>
+                <th>Name</th>
+                <th> Sport</th>
+                <th> Nationality</th>
+                <th> earnings ($ million)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2020</td>
+                <td>Roger Federer</td>
+                <td>TENNIS</td>
+                <td>Switzerland</td>
+                <td>106.300000</td>
+              </tr>
+              <tr>
+                <td>2019</td>
+                <td>Lionel Messi</td>
+                <td>SOCCER</td>
+                <td>Argentina</td>
+                <td>127.000000</td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td>Floyd Mayweather</td>
+                <td>BOXING</td>
+                <td>USA</td>
+                <td>285.000000</td>
+              </tr>
+              <tr>
+                <td>2017</td>
+                <td>Cristiano Ronaldo</td>
+                <td>SOCCER</td>
+                <td>Portugal</td>
+                <td>93.000000</td>
+              </tr>
+              <tr>
+                <td>2016</td>
+                <td>Cristiano Ronaldo</td>
+                <td>SOCCER</td>
+                <td>Portugal</td>
+                <td>88.000000</td>
+              </tr>
+              <tr>
+                <td>2015</td>
+                <td>Floyd Mayweather</td>
+                <td>BOXING</td>
+                <td>USA</td>
+                <td>300.000000</td>
+              </tr>
+              <tr>
+                <td>2014</td>
+                <td>Floyd Mayweather</td>
+                <td>BOXING</td>
+                <td>USA</td>
+                <td>105.000000</td>
+              </tr>
+              <tr>
+                <td>2013</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>78.100000</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>Floyd Mayweather</td>
+                <td>BOXING</td>
+                <td>USA</td>
+                <td>85.000000</td>
+              </tr>
+              <tr>
+                <td>2011</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>75.000000</td>
+              </tr>
+              <tr>
+                <td>2010</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>105.000000</td>
+              </tr>
+              <tr>
+                <td>2009</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>110.000000</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>115.000000</td>
+              </tr>
+              <tr>
+                <td>2007</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>100.000000</td>
+              </tr>
+              <tr>
+                <td>2006</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>90.000000</td>
+              </tr>
+              <tr>
+                <td>2005</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>87.000000</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>80.300000</td>
+              </tr>
+              <tr>
+                <td>2003</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>78.000000</td>
+              </tr>
+              <tr>
+                <td>2002</td>
+                <td>Tiger Woods</td>
+                <td>GOLF</td>
+                <td>USA</td>
+                <td>69.000000</td>
+              </tr>
+              <tr>
+                <td>2000</td>
+                <td>Michael Schumacher</td>
+                <td>AUTO_RACING</td>
+                <td>Germany</td>
+                <td>59.000000</td>
+              </tr>
+              <tr>
+                <td>1999</td>
+                <td>Michael Schumacher</td>
+                <td>AUTO_RACING</td>
+                <td>Germany</td>
+                <td>49.000000</td>
+              </tr>
+              <tr>
+                <td>1998</td>
+                <td>Michael Jordan</td>
+                <td>BASKETBALL</td>
+                <td>USA</td>
+                <td>69.000000</td>
+              </tr>
+              <tr>
+                <td>1997</td>
+                <td>Michael Jordan</td>
+                <td>BASKETBALL</td>
+                <td>USA</td>
+                <td>78.300000</td>
+              </tr>
+              <tr>
+                <td>1996</td>
+                <td>Mike Tyson</td>
+                <td>BOXING</td>
+                <td>USA</td>
+                <td>75.000000</td>
+              </tr>
+              <tr>
+                <td>1995</td>
+                <td>Michael Jordan</td>
+                <td>BASKETBALL</td>
+                <td>USA</td>
+                <td>43.900000</td>
+              </tr>
+              <tr>
+                <td>1994</td>
+                <td>Michael Jordan</td>
+                <td>BASKETBALL</td>
+                <td>USA</td>
+                <td>30.000000</td>
+              </tr>
+              <tr>
+                <td>1993</td>
+                <td>Michael Jordan</td>
+                <td>BASKETBALL</td>
+                <td>USA</td>
+                <td>36.000000</td>
+              </tr>
+              <tr>
+                <td>1992</td>
+                <td>Michael Jordan</td>
+                <td>BASKETBALL</td>
+                <td>USA</td>
+                <td>35.900000</td>
+              </tr>
+              <tr>
+                <td>1991</td>
+                <td>Evander Holyfield</td>
+                <td>BOXING</td>
+                <td>USA</td>
+                <td>60.500000</td>
+              </tr>
+              <tr>
+                <td>1990</td>
+                <td>Mike Tyson</td>
+                <td>BOXING</td>
+                <td>USA</td>
+                <td>28.600000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section><!-- End Annual Section -->
+
+    <!-- ======= Visualize Section ======= -->
+    <section id="visualize" class="visualize">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>시각화</h2>
+          <p>시각화를 해봅시다.</p>
+        </div><div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="visualize-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-annual">1st</li>
+              <li data-filter=".filter-types">2nd</li>
+              <li data-filter=".filter-person">3rd</li>
+              <li data-filter=".filter-race">4th</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row visualize-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-5 col-md-5 visualize-item filter-annual">
+            <div class="visualize-annual">
+              <img src="static/img/visualize/01-1_Accum_most.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 visualize-item filter-annual">
+            <div class="visualize-annual">
+              <img src="static/img/visualize/01-2_Income_TopCount.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 visualize-item filter-types">
+            <div class="visualize-types">
+              <img src="static/img/visualize/02-1_Country.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 visualize-item filter-types">
+            <div class="visualize-types">
+              <img src="static/img/visualize/02-2_Sport.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 visualize-item filter-person">
+            <div class="visualize-person">
+              <img src="static/img/visualize/03-1_TigerWoods.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 visualize-item filter-person">
+            <div class="visualize-person">
+              <img src="static/img/visualize/03-2_FloydMayweather.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 visualize-item filter-person">
+            <div class="visualize-person">
+              <img src="static/img/visualize/03-3_LeBronJames.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 visualize-item filter-person">
+            <div class="visualize-person">
+              <img src="static/img/visualize/04_racing_bar_chart.gif" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Visualize Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Forbes Richest Atheletes EDA</h3>
+      <p>EDA의 결과를 웹 상에서 보여주는 프로젝트입니다.</p>
+      <div class="social-links">
+        <a href="https://github.com/HAI-syz" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.kaggle.com/datasets/parulpandey/forbes-highest-paid-athletes-19902019" class="database"><i class="bx bx-box"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/purecounter/purecounter.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/typed.js/typed.min.js"></script>
+  <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
