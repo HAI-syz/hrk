@@ -288,7 +288,7 @@
         <div class="section-title">
           <h2>데이터 좀 더 자세히 살펴보기</h2>
           <p>String data를 좀 더 살펴봅시다.</p>
-          <div class="col" style="float: none; margin:0 auto;">
+          <div class="row" style="float: none; margin:0 auto;">
             <ul>
               <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <p>Aaron Rodgers, <span style="font-weight:bold">Aaron Rogers</span><sup>1</sup>, Alain Prost, Alex Rodriguez, Andre Agassi, Andrew Luck, Arnold Palmer, Ayrton Senna, Buster Douglas, Cam Newton, Canelo Alvarez, Carson Wentz, Cecil Fielder, Conor McGregor, Cristiano Ronaldo, Dale Earnhardt, Dale Earnhardt Jr., David Beckham, Deion Sanders, Dennis Rodman, <span style="font-weight:bold">Donovan "Razor" Ruddock</span><sup>2</sup>, Drew Brees, Eli Manning, Emmit Smith, Evander Holyfield, Floyd Mayweather, Gary Sheffield, George Foreman, Gerhard Berger, Grant Hill, Greg Norman, Jack Nicklaus, Jacques Villeneuve, James Harden, Jeff Gordon, Jim Courier, Joe Montana, Joe Sakic, Jordan Spieth, Kevin Durant, Kevin Garnett, Kimi Raikkonen, Kirk Cousins, Kobe Bryant, Lance Armstrong, LeBron James, Lennox Lewis, Lewis Hamilton, Lionel Messi, Manny Pacquiao, Matt Ryan, Matthew Stafford, Michael Jordan, Michael Moorer, Michael Schumacher, Michael Vick, Mike Tyson, Monica Seles, Muhammad Ali, Neymar, Nigel Mansell, Novak Djokovic, Oscar De La Hoya, Patrick Ewing, Peyton Manning, Phil Mickelson, Rafael Nadal, Riddick Bowe, Roger Federer, Ronaldinho, Rory McIlroy, Russell Wilson, Sergei Federov, <span style="font-weight:bold">Shaq O'Neal, Shaquille O'Neal</span><sup>3</sup>, Stephen Curry, Sugar Ray Leonard, Terrell Suggs, Tiger Woods, Tom Brady, Valentino Rossi, Wayne Gretzky</p></li>
               <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <p>Argentina, Australia, Austria, Brazil, Canada, Dominican, <span style="font-weight:bold">Filipino</span><sup>4</sup>, Finland, France, Germany, Ireland, Italy, Mexico, Northern Ireland, Philippines, Portugal, Russia, Serbia, Spain, Switzerland, UK, USA</p></li>
@@ -304,7 +304,7 @@
             <ol>motorcycle gp: WGP로 줄여씁니다.</ol>
           </ul>
           <strong>변경 후</strong>
-          <div class="col" style="float: none; margin:0 auto;">
+          <div class="row" style="float: none; margin:0 auto;">
             <ul>
               <li><i class="bi bi-chevron-right"></i> <strong>Name (82 -> 80):</strong> <p>Aaron Rodgers, Alain Prost, Alex Rodriguez, Andre Agassi, Andrew Luck, Arnold Palmer, Ayrton Senna, Buster Douglas, Cam Newton, Canelo Alvarez, Carson Wentz, Cecil Fielder, Conor McGregor, Cristiano Ronaldo, Dale Earnhardt, Dale Earnhardt Jr., David Beckham, Deion Sanders, Dennis Rodman, Donovan Razor Ruddock, Drew Brees, Eli Manning, Emmit Smith, Evander Holyfield, Floyd Mayweather, Gary Sheffield, George Foreman, Gerhard Berger, Grant Hill, Greg Norman, Jack Nicklaus, Jacques Villeneuve, James Harden, Jeff Gordon, Jim Courier, Joe Montana, Joe Sakic, Jordan Spieth, Kevin Durant, Kevin Garnett, Kimi Raikkonen, Kirk Cousins, Kobe Bryant, Lance Armstrong, LeBron James, Lennox Lewis, Lewis Hamilton, Lionel Messi, Manny Pacquiao, Matt Ryan, Matthew Stafford, Michael Jordan, Michael Moorer, Michael Schumacher, Michael Vick, Mike Tyson, Monica Seles, Muhammad Ali, Neymar, Nigel Mansell, Novak Djokovic, Oscar De La Hoya, Patrick Ewing, Peyton Manning, Phil Mickelson, Rafael Nadal, Riddick Bowe, Roger Federer, Ronaldinho, Rory McIlroy, Russell Wilson, Sergei Federov, Shaquille O'Neal, Stephen Curry, Sugar Ray Leonard, Terrell Suggs, Tiger Woods, Tom Brady, Valentino Rossi, Wayne Gretzky</p></li>
               <li><i class="bi bi-chevron-right"></i> <strong>Nationality (22 -> 21):</strong> <p>Argentina, Australia, Austria, Brazil, Canada, Dominican, Finland, France, Germany, Ireland, Italy, Mexico, Northern Ireland, Philippines, Portugal, Russia, Serbia, Spain, Switzerland, UK, USA</p></li>
@@ -556,14 +556,22 @@
         <div class="section-title">
           <h2>시각화</h2>
           <p>시각화를 해봅시다.</p>
-        </div><div class="row">
+        </div>
+        <div class="row">
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="visualize-flters">
+<!--             <ul id="visualize-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-annual">1st</li>
               <li data-filter=".filter-types">2nd</li>
               <li data-filter=".filter-person">3rd</li>
               <li data-filter=".filter-race">4th</li>
+            </ul> -->
+            <ul class="filter-wrap-my">
+              <li><input type="checkbox"><label class="filter01 all">ALL</label></li>
+              <li><input type="checkbox"><label class="filter01">1st</label></li>
+              <li><input type="checkbox"><label class="filter01">2nd</label></li>
+              <li><input type="checkbox"><label class="filter01">3rd</label></li>
+              <li><input type="checkbox"><label class="filter01">4th</label></li>
             </ul>
           </div>
         </div>
